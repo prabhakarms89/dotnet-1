@@ -1,8 +1,7 @@
-==================================
-COMPLETE BUILD AND CODE SCANNING
-==================================
-
-name: CI
+#==================================
+#COMPLETE BUILD AND CODE SCANNING
+#==================================
+name: ci
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -105,5 +104,4 @@ jobs:
       env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}   
       with:
-          scanMetadataReportFile: .sonarqube/out/.sonar/report-task.txt  
-  
+          scanMetadataReportFile: .sonarqube/out/.sonar/report-task.txt
